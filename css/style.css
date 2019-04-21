@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: lightgray;
+}
+
+li:hover {
+    background: lightgray;
+    cursor: pointer;
+
+}
+
+li input[type=checkbox] {
+    zoom: 2;
+    cursor: pointer;
+
+}
+
+#completed {
+    text-decoration: line-through;
+
+}
+
+#complete:empty {
+    visibility: hidden;
+}

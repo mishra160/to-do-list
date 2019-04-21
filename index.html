@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>to-do-list</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center display-2">To-do-list</h1>
+        <form class="input-group">
+            <input id="inputTab" type="text" class="form-control form-control-lg" placeholder="Add an item..">
+            <span class="input-group-btn ml-2">
+                <button id="addBtn" type="submit" class="btn btn-primary btn-lg">Add</button>
+            </span>
+        </form>
+        <!-- horizontal line with message -->
+        <div class="row mt-5">
+            <div class="col-md-4">
+                <hr>
+            </div>
+            <div class="col-md-4">
+                <h2 class="text-center">YOUR TASK</h2>
+            </div>
+            <div class="col-md-4">
+                <hr>
+            </div>
+
+        </div>
+
+        <!-- TASK TO BE COMPLETED -->
+
+        <ul class="list-group bg-primary rounded p-5 mt-5 invisible" id="complete">
+            <!-- <li class="list-group-item my-2">
+                <input type="checkbox" class="mr-2">
+                <h5 class="d-inline">This is So Embrassing!</h5>
+                <span class="float-right">
+                    <button class="btn btn-success btn-sm mx-2">Edit</button>
+                    <button class="btn btn-danger btn-sm mx-2">Delete</button>
+                </span>
+            </li> -->
+        </ul>
+        <!-- horiontal line with completed task   -->
+
+        <div class="row mt-5">
+            <div class="col-md-4">
+                <hr>
+            </div>
+            <div class="col-md-4">
+                <h2 class="text-center">COMPLETED TASK</h2>
+            </div>
+            <div class="col-md-4">
+                <hr>
+            </div>
+
+        </div>
+
+        <!-- TASK COMPLETED -->
+        <ul class="list-group bg-success rounded p-5 mt-5 invisible" id="completed">
+        </ul>
+    </div>
+
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
